@@ -1,0 +1,442 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div.up-arrow {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 111;
+  background: #f66249;
+}
+div.up-arrow a {
+  color: white;
+  line-height: 55px;
+  font-size: 20px;
+}
+
+button.cart {
+  border: none;
+  background: #f66249;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button.cart:hover {
+  background: #f43818;
+}
+
+.header-txt h3 {
+  font-size: 20px;
+  color: #2a313e;
+  padding: 10px 0 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.header-txt h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 60px;
+  background: #f66249;
+  left: 0;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+span.star i {
+  color: #ffab1a;
+}
+
+section.section-1 {
+  background-color: #2b2e34;
+  color: white;
+}
+section.section-1 div.item-1 {
+  position: relative;
+  font-size: 15px;
+}
+section.section-1 div.item-1 span:before {
+  content: "\f003";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: white;
+  font-size: 16px;
+  padding-right: 5px;
+  position: absolute;
+  right: 100%;
+}
+section.section-1 div.item-2 {
+  position: relative;
+}
+section.section-1 div.item-2 input {
+  background: #25262b;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+section.section-1 div.item-2 a.btn-1 {
+  background: transparent !important;
+  padding: 15px;
+  border: none;
+  border-radius: 0 !important;
+  color: white;
+  outline: none;
+  position: relative;
+  transition: 250ms;
+}
+section.section-1 div.item-2 a.btn-1:before {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 1px;
+  margin: auto;
+  left: 0;
+  /* border: #444; */
+  background: #444;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.section-1 div.item-2 a.btn-1:hover {
+  color: #f66249;
+}
+section.section-1 div.item-2 a.btn-2 {
+  background: #f66249;
+  padding: 14px 30px;
+  border-radius: 0 !important;
+  color: white;
+  outline: none;
+  transition: 250ms;
+}
+section.section-1 div.item-2 a.btn-2:hover {
+  background: #f43818;
+}
+section.section-1 div.item-2 input:focus {
+  outline: none;
+}
+
+section.section-2 {
+  background: #25262b;
+}
+section.section-2 hr {
+  background-color: #444;
+  margin: 0;
+}
+section.section-2 .logo {
+  padding: 15px 0;
+}
+section.section-2 nav {
+  padding-left: 0 !important;
+}
+section.section-2 ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 250ms;
+  margin-right: 20px;
+}
+section.section-2 ul li a:hover, section.section-2 a.active {
+  color: #f66249;
+}
+
+section.section-3 {
+  background: #f4f4f4;
+}
+section.section-3 .row-1 span {
+  color: #a9a9a9 !important;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+}
+section.section-3 .row-1 span.first {
+  padding-right: 5px;
+  padding-left: 0;
+}
+section.section-3 .row-1 span.first a {
+  color: #a7a7a7 !important;
+}
+section.section-3 .row-1 span.first a:hover {
+  text-decoration: none;
+  color: #f66249 !important;
+}
+section.section-3 .row-1 span a::after {
+  content: '\002F';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  color: #a9a9a9;
+  font-size: 13px;
+}
+section.section-3 .row-2 div.search {
+  padding: 20px 0;
+}
+section.section-3 .row-2 div.search input {
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+section.section-3 .row-2 div.filter {
+  padding-bottom: 20px;
+}
+section.section-3 .row-2 div.filter h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111;
+  line-height: 26px;
+  padding: 20px 0 30px;
+}
+section.section-3 .row-2 div.filter div.line {
+  height: 8px;
+  width: 100%;
+  background: #f66249;
+  margin-bottom: 20px;
+  position: relative;
+}
+section.section-3 .row-2 div.filter div.line::before, section.section-3 .row-2 div.filter div.line::after {
+  content: '';
+  height: 13px;
+  width: 13px;
+  background-color: #f66249;
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+}
+section.section-3 .row-2 div.filter div.line::after {
+  left: 99% !important;
+}
+section.section-3 .row-2 div.filter div.d-flex button {
+  padding: 8px 25px;
+}
+section.section-3 .row-2 div.filter div.d-flex .text {
+  color: #717171;
+  font-size: 14px;
+  font-weight: bold;
+}
+section.section-3 .row-2 div.product {
+  padding: 20px 0;
+}
+section.section-3 .row-2 div.product h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111;
+  line-height: 26px;
+  padding: 20px 0 30px;
+}
+section.section-3 .row-2 div.product div.product-1 {
+  margin-bottom: 10px;
+}
+section.section-3 .row-2 div.product div.product-1 h4, section.section-3 .row-2 div.product div.product-1 span {
+  color: #2a313e;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+section.section-3 .row-2 div.product div.product-1 h4:hover {
+  color: #f66249;
+  cursor: pointer;
+}
+section.section-3 .row-2 div.product div.product-1 .product-text, section.section-3 .row-2 div.product div.product-1 .product-img {
+  align-self: center;
+}
+section.section-3 .row-2 div.product div.product-1 img {
+  object-fit: cover;
+}
+section.section-3 .row-2 div.productListing .head-row {
+  padding: 20px 0;
+}
+section.section-3 .row-2 div.productListing .head-row h3 {
+  font-size: 30px;
+  margin: 0;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+section.section-3 .row-2 div.productListing .head-row span {
+  color: #f66249;
+  font-size: 15px;
+}
+section.section-3 .row-2 div.productListing .product-row .img {
+  position: relative;
+  overflow: hidden;
+}
+section.section-3 .row-2 div.productListing .product-row .img img {
+  width: 100%;
+  height: auto;
+}
+section.section-3 .row-2 div.productListing .product-row .img.sale::before {
+  content: 'Sale!';
+  position: absolute;
+  width: 80%;
+  padding: 6px;
+  top: 16px;
+  left: -46px;
+  background: #f66249;
+  color: white;
+  text-align: center;
+  transform: rotate(-45deg);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+section.section-3 .row-2 div.productListing .product-row .img-txt {
+  padding: 18px 0;
+  text-align: center;
+}
+section.section-3 .row-2 div.productListing .product-row .img-txt h4 a {
+  font-size: 19px;
+  color: #111;
+  transition: 200ms;
+}
+section.section-3 .row-2 div.productListing .product-row .img-txt h4 a:hover {
+  color: #f66249;
+  text-decoration: none;
+}
+section.section-3 .row-2 div.productListing .product-row .img-txt span.price {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+section.section-3 .row-2 div.productListing div.pagination-row {
+  margin-top: 50px;
+}
+section.section-3 .row-2 div.productListing div.pagination-row li {
+  padding: 4px 6px;
+  border-radius: 4px;
+  position: relative;
+}
+section.section-3 .row-2 div.productListing div.pagination-row a {
+  color: #2a313e;
+  transition: 200ms;
+}
+section.section-3 .row-2 div.productListing div.pagination-row li.active, section.section-3 .row-2 div.productListing div.pagination-row li.active a {
+  color: white;
+  background: #2a313e;
+}
+section.section-3 .row-2 div.productListing div.pagination-row a:hover {
+  color: #f66249 !important;
+  text-decoration: none;
+}
+section.section-3 .row-2 div.productListing div.pagination-row li.next::after {
+  content: "\f177";
+  font-family: FontAwesome;
+  font-style: normal;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  background: #25262b;
+  color: white;
+}
+footer .header-txt h3::after {
+  background: white;
+}
+footer .first-col ul {
+  list-style-type: none;
+}
+footer .first-col a {
+  color: white;
+  position: relative;
+  font-size: 14px;
+  transition: 200ms;
+}
+footer .first-col a:before {
+  content: '\f054';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  padding-right: 8px;
+  left: 0;
+  font-size: 14px;
+}
+footer .first-col a:hover {
+  color: #f66249;
+  text-decoration: none;
+}
+footer .second-col .post-img {
+  width: 100px;
+  height: auto;
+}
+footer .second-col .post-img img {
+  width: 100%;
+  object-fit: cover;
+}
+footer .second-col .img-text {
+  font-size: 14px;
+  padding-left: 8px;
+  font-weight: 500;
+}
+footer .second-col .img-text a {
+  color: white;
+  transition: 200ms;
+}
+footer .second-col .img-text a:hover {
+  color: #f66249;
+  text-decoration: none;
+}
+footer .third-col p {
+  color: #e3e3e3;
+  font-size: 14px;
+}
+footer .last-col button {
+  border: 1px solid #fff;
+  color: white;
+  border-radius: 0;
+  padding: 8px;
+  background: transparent;
+  transition: 200ms;
+  margin-right: 5px;
+  font-size: 14px;
+}
+footer .last-col button:hover {
+  background: #f66249;
+  border-color: #f66249;
+}
+footer .footer {
+  background: #2b2e34;
+}
+footer .footer .social a {
+  color: white;
+  margin-right: 12px;
+  font-size: 15px;
+}
+footer .footer .social a:hover {
+  text-decoration: none;
+  color: #f66249;
+}
+footer .footer .social ul {
+  margin: 0;
+}
+footer .footer span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,342 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+button.cart {
+  border: none;
+  background: #f66249;
+  border-radius: 5px;
+  padding: 7px 30px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+button.cart:hover {
+  background: #f43818;
+}
+
+section.section-1 {
+  background-color: #2b2e34;
+  color: white;
+}
+
+section.section-1 div.item-1 {
+  position: relative;
+  font-size: 15px;
+}
+
+section.section-1 div.item-1 span:before {
+  content: "\f003";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: white;
+  font-size: 16px;
+  padding-right: 5px;
+  position: absolute;
+  right: 100%;
+}
+
+section.section-1 div.item-2 {
+  position: relative;
+}
+
+section.section-1 div.item-2 input {
+  background: #25262b;
+  color: white;
+  border: none;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+section.section-1 div.item-2 a.btn-1 {
+  background: transparent !important;
+  padding: 15px;
+  border: none;
+  border-radius: 0 !important;
+  color: white;
+  outline: none;
+  position: relative;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+section.section-1 div.item-2 a.btn-1:before {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 1px;
+  margin: auto;
+  left: 0;
+  /* border: #444; */
+  background: #444;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+section.section-1 div.item-2 a.btn-1:hover {
+  color: #f66249;
+}
+
+section.section-1 div.item-2 a.btn-2 {
+  background: #f66249;
+  padding: 14px 30px;
+  border-radius: 0 !important;
+  color: white;
+  outline: none;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+section.section-1 div.item-2 a.btn-2:hover {
+  background: #f43818;
+}
+
+section.section-1 div.item-2 input:focus {
+  outline: none;
+}
+
+section.section-2 {
+  background: #25262b;
+}
+
+section.section-2 hr {
+  background-color: #444;
+  margin: 0;
+}
+
+section.section-2 .logo {
+  padding: 15px 0;
+}
+
+section.section-2 nav {
+  padding-left: 0 !important;
+}
+
+section.section-2 ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  margin-right: 20px;
+}
+
+section.section-2 ul li a:hover, section.section-2 a.active {
+  color: #f66249;
+}
+
+section.section-3 .row-1 span {
+  color: #a9a9a9 !important;
+  font-size: 13px;
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+}
+
+section.section-3 .row-1 span.first {
+  padding-right: 5px;
+  padding-left: 0;
+}
+
+section.section-3 .row-1 span.first a {
+  color: #a7a7a7 !important;
+}
+
+section.section-3 .row-1 span.first a:hover {
+  text-decoration: none;
+  color: #f66249 !important;
+}
+
+section.section-3 .row-1 span a::after {
+  content: '\002F';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  color: #a9a9a9;
+  font-size: 13px;
+}
+
+section.section-3 div.row-heading h3 {
+  font-size: 30px;
+  line-height: 40px;
+  color: #2a313e;
+  font-weight: 700;
+}
+
+section.section-3 div.row-3 p {
+  color: #717171;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+section.section-3 div.row-3 div.icon {
+  background: #2a313e;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+section.section-3 div.row-3 div.icon span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+section.section-3 div.row-3 div.description h5 {
+  font-size: 15px;
+  color: #2a313e;
+  margin-bottom: 0 !important;
+}
+
+section.section-3 div.row-3 div.description span {
+  color: #717171;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section.section-3 div.row-4 form label {
+  color: #717171;
+  font-size: 15px;
+  margin-bottom: 0 !important;
+}
+
+section.section-3 div.row-4 form input, section.section-3 div.row-4 form textarea {
+  margin-bottom: 20px;
+  height: 35px;
+}
+
+section.section-3 div.row-4 form input:focus, section.section-3 div.row-4 form textarea:focus {
+  border: 2px solid black;
+  background: #c1c1c13b;
+  -webkit-box-shadow: 0 0 !important;
+          box-shadow: 0 0 !important;
+}
+
+section.section-3 div.row-4 form textarea {
+  height: 80px;
+}
+
+footer {
+  background: #25262b;
+  color: white;
+}
+
+footer .header-txt h3::after {
+  background: white;
+}
+
+footer .first-col ul {
+  list-style-type: none;
+}
+
+footer .first-col a {
+  color: white;
+  position: relative;
+  font-size: 14px;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+footer .first-col a:before {
+  content: '\f054';
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  padding-right: 8px;
+  left: 0;
+  font-size: 14px;
+}
+
+footer .first-col a:hover {
+  color: #f66249;
+  text-decoration: none;
+}
+
+footer .second-col .post-img {
+  width: 100px;
+  height: auto;
+}
+
+footer .second-col .post-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .second-col .img-text {
+  font-size: 14px;
+  padding-left: 8px;
+  font-weight: 500;
+}
+
+footer .second-col .img-text a {
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+footer .second-col .img-text a:hover {
+  color: #f66249;
+  text-decoration: none;
+}
+
+footer .third-col p {
+  color: #e3e3e3;
+  font-size: 14px;
+}
+
+footer .last-col button {
+  border: 1px solid #fff;
+  color: white;
+  border-radius: 0;
+  padding: 8px;
+  background: transparent;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+footer .last-col button:hover {
+  background: #f66249;
+  border-color: #f66249;
+}
+
+footer .footer {
+  background: #2b2e34;
+}
+
+footer .footer .social a {
+  color: white;
+  margin-right: 12px;
+  font-size: 15px;
+}
+
+footer .footer .social a:hover {
+  text-decoration: none;
+  color: #f66249;
+}
+
+footer .footer .social ul {
+  margin: 0;
+}
+
+footer .footer span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */

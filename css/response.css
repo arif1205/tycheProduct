@@ -1,0 +1,119 @@
+@media screen and (max-width: 767px) {
+  section.section-1 div.container {
+    display: block !important;
+  }
+  section.section-1 div.item-1 {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  section.section-1 div.item-1 span:before {
+    right: 62%;
+  }
+  section.section-1 div.item-2 {
+    width: 100%;
+    height: 160px;
+  }
+  section.section-1 div.item-2 input {
+    width: 100%;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 6px 12px;
+  }
+  section.section-1 div.item-2 a {
+    width: 100%;
+    position: absolute;
+  }
+  section.section-1 div.item-2 a.btn-2 {
+    top: 0;
+    left: 0;
+  }
+  section.section-1 div.item-2 a.btn-1 {
+    top: 44px;
+    left: 0;
+    text-align: left;
+  }
+  section.section-2 nav button {
+    border: none;
+    outline: none;
+    padding: 0;
+  }
+  section.section-2 nav button span {
+    color: white;
+    font-size: 24px;
+  }
+  section.section-2 nav button span:hover {
+    color: #f66249;
+  }
+  section.section-3 {
+    background-position: center;
+  }
+  section.section-4 .container {
+    max-width: 100% !important;
+  }
+  section.section-4 div.text, section.section-4 div.d-inline-block {
+    display: block !important;
+    text-align: center;
+  }
+  footer .footer div.d-flex {
+    display: block !important;
+  }
+  footer .footer div.social, footer .footer div.copyright {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  button.cart {
+    display: block;
+    margin: auto;
+  }
+  section.section-5 .row-1 .product-banner span:nth-child(1) {
+    padding-top: 70px;
+  }
+  section.section-5 .row-1 .product-banner button {
+    margin-bottom: 70px;
+  }
+  section.section-6 .row .col-md-4 {
+    margin-left: 16px;
+  }
+  section.section-6 .row .col-md-4 button {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  section.section-1 div.item-1 span::before {
+    right: 64%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  section.section-8 .row .col-md-6 div.date {
+    padding: 8px;
+  }
+  section.section-8 .row .col-md-6 div.blog-img {
+    width: 140px;
+  }
+  section.section-8 .row .col-md-6 div.blog-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.section-8 .row .col-md-6 div.blog-link {
+    padding-left: 10px;
+  }
+  section.section-8 .row .col-md-6 div.blog-link h3 {
+    letter-spacing: 0 !important;
+    font-size: 18px !important;
+  }
+  section.section-1 div.item-1 span::before {
+    right: 68.5%;
+  }
+}
+/*# sourceMappingURL=response.css.map */
